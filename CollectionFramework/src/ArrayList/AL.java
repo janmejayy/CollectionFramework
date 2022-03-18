@@ -9,9 +9,10 @@ public static void main(String[] args) {
 	list.add("is");
 	list.add("jay");
 
-
+list.forEach((n)->System.out.print(n+" "));
 	System.out.println(list);
-	//Iteratinng arraylist using iterator
+	
+	//Iterating arraylist using iterator
 	Iterator itr=list.iterator();
 	while(itr.hasNext()) {
 		System.out.println(itr.next());
@@ -21,5 +22,10 @@ public static void main(String[] args) {
 		System.out.println(name);
 	}
 	System.out.println();
+	//method -3
+	for(int i=0; i<list.size();i++) {
+		System.out.println(list.get(i));
+	}
+	
 }
 }
